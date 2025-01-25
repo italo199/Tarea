@@ -1,0 +1,47 @@
+/* Estilo exclusivo para el menú de navegación */
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+ 
+    background: linear-gradient(90deg, #1f695d, #78cf95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Indicador animado debajo del enlace */
+nav ul.menu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+nav ul.menu li a:hover::after {
+    width: 100%;
+}
